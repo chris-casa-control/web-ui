@@ -21,7 +21,7 @@
             "input": "apps/recipes/public"
           }
         ],
-        "styles": ["apps/recipes/src/styles.scss"]
+        "styles": ["apps/recipes/src/styles.css"]
       },
       "configurations": {
         "production": {
