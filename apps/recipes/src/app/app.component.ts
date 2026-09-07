@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   imports: [RouterModule],
   selector: 'recipes-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-  protected title = 'recipes-ui';
-}
+export class AppComponent {}

@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "serve:recipes": "npx nx run recipes-ui:serve",
+    "test:unit": "npx nx run-many test",
     "depcruise": "depcruise apps libs --config --output-type err",
     "prepare": "husky",
     "prettier:check": "prettier --check ."

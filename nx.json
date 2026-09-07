@@ -111,17 +111,19 @@
   ],
   "generators": {
     "@nx/angular:application": {
-      "e2eTestRunner": "playwright",
+      "e2eTestRunner": "cypress",
       "linter": "eslint",
       "style": "css",
-      "unitTestRunner": "vitest-analog"
+      "unitTestRunner": "jest"
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "vitest-analog"
+      "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "css"
+      "style": "scss",
+      "changeDetection": "OnPush",
+      "type": "component"
     }
   },
   "neverConnectToCloud": true,
