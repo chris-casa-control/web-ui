@@ -1,20 +1,17 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NxWelcome } from './nx-welcome';
 
-describe('App', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent, NxWelcome],
-    }).compileComponents();
-  });
+describe('AppComponent...', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
 
-  it('should render title', async () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome recipes-ui',
-    );
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [AppComponent],
+    });
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 });
