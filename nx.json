@@ -62,7 +62,7 @@
   },
   "plugins": [
     {
-      "plugin": "@nx/playwright/plugin",
+      "plugin": "@nx/cypress/plugin",
       "options": {
         "targetName": "e2e"
       }
@@ -81,7 +81,6 @@
       }
     },
     {
-      "plugin": "@nx/vite/plugin",
       "options": {
         "buildTargetName": "build",
         "serveTargetName": "serve",
@@ -91,12 +90,6 @@
         "typecheckTargetName": "typecheck",
         "buildDepsTargetName": "build-deps",
         "watchDepsTargetName": "watch-deps"
-      }
-    },
-    {
-      "plugin": "@nx/vitest",
-      "options": {
-        "testTargetName": "test"
       }
     },
     {
@@ -121,7 +114,7 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "css",
+      "style": "none",
       "changeDetection": "OnPush",
       "type": "component"
     }

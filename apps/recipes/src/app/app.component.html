@@ -1,1 +1,17 @@
-<h1>Hallo</h1>
+<header class="w-full flex justify-between items-center">
+  <nav class="flex justify-between items-center">
+    <div class="flex gap-4 items-center">
+      @for (page of pages; track page) {
+        <a [href]="page.href">{{ page.name }}</a>
+      }
+    </div>
+
+    <a mat-fab>
+      <mat-icon></mat-icon>
+    </a>
+  </nav>
+</header>
+
+<main class="w-full grow">
+  <router-outlet />
+</main>

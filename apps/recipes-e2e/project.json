@@ -5,6 +5,14 @@
   "sourceRoot": "apps/recipes-e2e/src",
   "tags": [],
   "implicitDependencies": ["recipes-ui"],
-  "// targets": "to see all targets run: nx show project recipes-ui-e2e --web",
-  "targets": {}
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/recipes-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "recipes-ui:serve"
+      }
+    }
+  }
 }

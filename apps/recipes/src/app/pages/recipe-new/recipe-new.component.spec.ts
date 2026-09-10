@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RecipeNewComponent } from './recipe-new.component';
+
+describe('RecipeNewComponent', () => {
+  let component: RecipeNewComponent;
+  let fixture: ComponentFixture<RecipeNewComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [RecipeNewComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(RecipeNewComponent);
+    component = fixture.componentInstance;
+    await fixture.whenStable();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

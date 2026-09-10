@@ -48,9 +48,6 @@ Thumbs.db
 .claude/worktrees
 .playwright-mcp
 
-vite.config.*.timestamp*
-vitest.config.*.timestamp*
-
 .nx/polygraph
 .nx/self-healing
 .nx/migrate-runs
